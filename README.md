@@ -12,7 +12,7 @@ A simple and efficient Todo website built using React and TypeScript. This proje
 ## Technologies Used
 - React
 - TypeScript
-- CSS (or Tailwind CSS if used)
+- CSS 
 
 ## Installation
 
