@@ -19,13 +19,11 @@ A simple and efficient Todo website built using React and TypeScript. This proje
 1. Clone the repository:
    ```sh
    git clone https://github.com/sagargautam500/Todo-React_TypeScript-Project.git
-2. Navigate to the project folder:
-   ```sh
-   cd todo-App
-3. Install dependencies
+
+2. Install dependencies
     ```sh
       npm install
-4. Start the development server:
+3. Start the development server:
       ```
       npm run dev
 
