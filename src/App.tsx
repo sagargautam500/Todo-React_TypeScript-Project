@@ -1,12 +1,16 @@
 import './App.css'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 function App() {
 
   return (
     <>
-      <div>
-        <p>Todo_Website(React,Typescript)</p>
-      </div>
+      <main>
+        <h1>Todo_Website(React,Typescript)</h1>
+        <AddTodo/>
+        <Todos/>
+      </main>
     </>
   )
 }
