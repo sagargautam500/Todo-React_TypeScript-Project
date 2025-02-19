@@ -18,11 +18,13 @@ function Todos() {
   }
   return (
     <>
-      <ul className="todosList">
+      <ul className="todosList ">
         {FilterData.map((todo) => {
           return (
-            <li key={todo.id} className="todoList" >
-              <span className="todosName">
+            <li key={todo.id} className="todoList ">
+              <span
+                className={`todosName ${todo.completed ? "todo_name" : ""}`}
+              >
                 <input
                   type="checkbox"
                   id={`todo-${todo.id}`}

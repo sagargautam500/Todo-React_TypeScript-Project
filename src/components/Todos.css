@@ -12,11 +12,23 @@
   margin: 1rem;
   font-size: large;
 }
+.todosName:hover{
+  opacity: 70%;
+}
+
+.todo_name{
+  color: rgb(225, 113, 113);
+  text-decoration: line-through;
+}
 
 .deleteBtn {
   margin: 0px 40px;
-  background-color: rgb(67, 188, 188);
+  color:rgb(69, 15, 15);
+  background-color: rgb(126, 237, 217);
   width: 8rem;
   border-radius: 7px;
   padding: 6px;
+}
+.deleteBtn:hover{
+  opacity: 60%;
 }

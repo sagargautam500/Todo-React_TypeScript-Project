@@ -12,6 +12,10 @@ form input{
   margin-right: 2rem;
 }
 
+form input:hover{
+  border: 2.5px solid rgb(11, 12, 12);
+}
+
 form button{
   padding: 6px;
   border-radius: 5px;
@@ -19,4 +23,7 @@ form button{
   background-color: rgb(70, 234, 207);
   color: aliceblue;
   font-weight: bold;
+}
+form button:hover{
+  opacity: 70%;
 }
