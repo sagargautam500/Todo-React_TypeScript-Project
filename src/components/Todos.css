@@ -52,3 +52,20 @@ h2{
     padding: 3px;
   }
 }
+@media (max-width:320px) {
+  .todosList{
+    padding: 0.2rem;
+  }
+  .todoList {
+    margin: 0.4rem;
+  }
+  .todosName {
+    margin: 0.4rem;
+    font-size: small;
+  }
+  .deleteBtn {
+    margin: 0px 20px;
+    width: 3rem;
+    padding: 2px;
+  }
+}
