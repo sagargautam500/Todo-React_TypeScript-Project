@@ -24,14 +24,16 @@ main .todo_title{
     font-size: 1.3rem;
   }
 }
-@media (max-width:355px) {
+@media (max-width:375px) {
   main .todo_title{
     font-size: 1rem;
+    background-color: rgb(149, 116, 73);
   }
 }
 @media (max-width:320px) {
   main .todo_title{
     font-size: 0.8rem;
+    background-color: rgb(143, 37, 111);
   }
 }
 @media (max-width:244px) {
