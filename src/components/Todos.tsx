@@ -9,6 +9,13 @@ function Todos() {
 
   let FilterData = todos;
 
+  if(FilterData.length==0) {
+    return(<>
+    <h2>No Data are available !</h2>
+    <h3>Add Some data .......</h3>
+    </>)
+  }
+
   if (todosData === "active") {
     FilterData = FilterData.filter((task) => !task.completed);
     if (FilterData.length == 0) {
