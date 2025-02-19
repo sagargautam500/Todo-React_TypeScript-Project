@@ -9,8 +9,8 @@ function App() {
     <>
       <main>
         <h1>Todo_Website(React,Typescript)</h1>
-        <NavBar/>
         <AddTodo/>
+        <NavBar/>
         <Todos/>
       </main>
     </>

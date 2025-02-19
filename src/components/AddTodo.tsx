@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useTodos } from "../store/TodosProvider";
+import './AddTodo.css'
 
 
 function AddTodo() {

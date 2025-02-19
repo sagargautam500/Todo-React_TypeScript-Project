@@ -1,0 +1,22 @@
+.todosList {
+  padding: 1rem;
+  background-color: rgb(230, 244, 245);
+  list-style: none;
+}
+
+.todoList {
+  margin: 1rem;
+}
+
+.todosName {
+  margin: 1rem;
+  font-size: large;
+}
+
+.deleteBtn {
+  margin: 0px 40px;
+  background-color: rgb(67, 188, 188);
+  width: 8rem;
+  border-radius: 7px;
+  padding: 6px;
+}

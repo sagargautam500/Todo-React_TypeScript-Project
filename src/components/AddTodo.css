@@ -1,0 +1,22 @@
+form{
+  background-color: rgb(236, 240, 244);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form input{
+  width: 17rem;
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+form button{
+  padding: 6px;
+  border-radius: 5px;
+  width: 8rem;
+  background-color: rgb(70, 234, 207);
+  color: aliceblue;
+  font-weight: bold;
+}

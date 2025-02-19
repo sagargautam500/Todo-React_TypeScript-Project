@@ -1,0 +1,19 @@
+.Navbar {
+  background-color: rgb(233, 234, 234);
+  padding: 1rem;
+  text-align: center;
+}
+
+.NavLink {
+  margin: 0px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(60, 59, 59);
+}
+.NavLink:hover {
+  text-decoration: underline;
+  color: rgb(142, 88, 192);
+}
+.active {
+  color: rgb(157, 131, 181);
+}
