@@ -14,3 +14,18 @@ main .todo_title{
   text-decoration: underline;
   color: rgb(68, 61, 61);
 }
+@media (max-width:700px) {
+  main .todo_title{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:400px) {
+  main .todo_title{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width:355px) {
+  main .todo_title{
+    font-size: 1rem;
+  }
+}

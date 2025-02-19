@@ -17,3 +17,12 @@
 .active {
   color: rgb(157, 131, 181);
 }
+
+@media (max-width:425px) {
+  .Navbar{
+    padding: 0.5rem;
+  }
+  .NavLink {
+    margin: 0px 10px;
+  }
+}

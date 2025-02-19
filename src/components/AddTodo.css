@@ -34,3 +34,24 @@ form button:hover{
   padding: 2px;
   width: fit-content;
 }
+
+@media(max-width:555px) {
+  form input{
+    padding: 5px;
+    width: 15rem;
+    margin-bottom: 5px;
+  }
+  form button{
+    padding: 5px;
+  }
+}
+@media(max-width:375px) {
+  form input{
+    padding: 4px;
+    width: 12rem;
+    margin-bottom: 5px;
+  }
+  form button{
+    padding: 4px;
+  }
+}

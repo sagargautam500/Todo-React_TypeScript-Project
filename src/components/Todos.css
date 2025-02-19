@@ -37,3 +37,18 @@ h2{
   text-align: center;
   color: rgb(69, 64, 64);
 }
+
+@media (max-width:600px) {
+  .deleteBtn {
+    margin: 0px 20px;
+    width: 6rem;
+    padding: 4px;
+  }
+}
+@media (max-width:425px) {
+  .deleteBtn {
+    margin: 0px 20px;
+    width: 4rem;
+    padding: 3px;
+  }
+}
