@@ -5,14 +5,22 @@ import './AddTodo.css'
 
 function AddTodo() {
   const [todo, setTodo] = useState("");
+  const [error, setError] = useState(""); // State to store error message
   const{handleAddTodo} =useTodos();
   const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    handleAddTodo(todo);
+    if(todo){
+      setError('')
+      handleAddTodo(todo);
+    }else{
+      setError("Please enter some message !")
+    }
     setTodo("");
   };
 
   return (
+    <>
+     {error && <p className="errorMsg">{error}</p>}
     <form onSubmit={handleFormSubmit}>
       <input
         type="text"
@@ -21,6 +29,7 @@ function AddTodo() {
       />
       <button type="submit">Add</button>
     </form>
+    </>
   );
 }
 

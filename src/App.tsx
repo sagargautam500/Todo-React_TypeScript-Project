@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <main>
-        <h1>Todo_Website(React,Typescript)</h1>
-        <AddTodo/>
+        <h1 className='todo_title'>Todo_Website(React,Typescript)</h1>
+       <center><AddTodo/></center> 
         <NavBar/>
         <Todos/>
       </main>

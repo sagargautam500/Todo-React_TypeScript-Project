@@ -9,7 +9,7 @@ main{
   padding: 1rem;
 }
 
-main h1{
+main .todo_title{
   text-align: center;
   text-decoration: underline;
   color: rgb(68, 61, 61);

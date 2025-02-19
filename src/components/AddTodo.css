@@ -1,6 +1,6 @@
 form{
   background-color: rgb(236, 240, 244);
-  padding: 1rem;
+  padding:0rem 1rem 1rem 1rem ;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -26,4 +26,11 @@ form button{
 }
 form button:hover{
   opacity: 70%;
+}
+
+.errorMsg{
+  color: red;
+  text-align: center;
+  padding: 2px;
+  width: fit-content;
 }

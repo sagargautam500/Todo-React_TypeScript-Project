@@ -32,3 +32,8 @@
 .deleteBtn:hover{
   opacity: 60%;
 }
+
+h2{
+  text-align: center;
+  color: rgb(69, 64, 64);
+}

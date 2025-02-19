@@ -11,11 +11,18 @@ function Todos() {
 
   if (todosData === "active") {
     FilterData = FilterData.filter((task) => !task.completed);
+    if (FilterData.length == 0) {
+      return <h2>No Active data are available</h2>;
+    }
   }
 
   if (todosData === "complete") {
     FilterData = FilterData.filter((task) => task.completed);
+    if (FilterData.length == 0) {
+      return <h2>No Complete data are available</h2>;
+    }
   }
+
   return (
     <>
       <ul className="todosList ">
