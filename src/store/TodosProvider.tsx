@@ -21,7 +21,14 @@ export type TodoContext = {
 export const todosContext = createContext<TodoContext | null>(null);
 
 function TodosProvider({ children }: TodosProviderProp) {
-  const [todos, setTodos] = useState<Todo[]>([]);
+  const [todos, setTodos] = useState<Todo[]>(() => {
+    try {
+      let newTodos = localStorage.getItem("localTodos") || "[]";   //get data from local storage now::
+      return JSON.parse(newTodos);
+    } catch (error) {
+      return [];
+    }
+  });
 
   const handleAddTodo = (task: string) => {
     setTodos((prev) => {
@@ -34,6 +41,7 @@ function TodosProvider({ children }: TodosProviderProp) {
         },
         ...prev,
       ];
+      localStorage.setItem("localTodos", JSON.stringify(newTodos)); //local storage save data using serItem() method
       return newTodos;
     });
   };
@@ -52,13 +60,14 @@ function TodosProvider({ children }: TodosProviderProp) {
   //   });
   // };
   const toggleTodoAsComplete = (id: string) => {
-    setTodos((prevTodos) => 
-      prevTodos.map((todo) =>
+    setTodos((prevTodos) => {
+      let newTodos = prevTodos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
+      );
+      localStorage.setItem("localTodos", JSON.stringify(newTodos));
+      return newTodos;
+    });
   };
-  
 
   //handleDeleteButton..
   const handleDeleteButton = (id: string) => {
@@ -66,7 +75,8 @@ function TodosProvider({ children }: TodosProviderProp) {
     //   let newTodos = prev.filter((todo) => todo.id !== id);
     //   return newTodos;
     // });
-    let newTodos=todos.filter((todo)=>todo.id!==id)
+    let newTodos = todos.filter((todo) => todo.id !== id);
+    localStorage.setItem("localTodos", JSON.stringify(newTodos));
     setTodos(newTodos);
   };
 
